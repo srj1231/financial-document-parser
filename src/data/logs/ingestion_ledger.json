@@ -1,0 +1,11 @@
+{
+    "c9a62e04-1d11-4be0-b380-94c50d44f139": {
+        "transaction_id": "c9a62e04-1d11-4be0-b380-94c50d44f139",
+        "original_filename": "udemy_output_All_Finance__Accounting_p1_p626.csv",
+        "file_extension": ".csv",
+        "received_at": "2026-08-16T18:55:41.329834",
+        "status": "PROCESSING",
+        "current_path": "/Users/saumyajha/Documents/projects/financial-parser/src/data/processing/c9a62e04-1d11-4be0-b380-94c50d44f139.csv",
+        "error_message": null
+    }
+}

@@ -11,7 +11,7 @@ class DataIngestionLayer:
         """initializes directory structure and log path"""
         if base_dir is None:
             script_dir = os.path.dirname(os.path.abspath(__file__))
-            base_dir = os.path.join(script_dir, "..", "data")
+            base_dir = os.path.join(script_dir, "data")
 
         self.base_dir = base_dir
 
@@ -151,11 +151,11 @@ if __name__ == "__main__":
     # Step 3: simulate downstream results # todo
     if jobs:
         # Simulate the first file completing successfully
-        ingestor.update_transaction_status(jobs[0]["transaction_id"], "COMPLETED")
+        ingestor.update_transaction_status(jobs[0], "COMPLETED")
 
         if(len(jobs) > 1):
             ingestor.update_transaction_status(
-                jobs[1]["transaction_id"],
+                jobs[1],
                 "FAILED",
                 error_msg="ParserException: Row 4 columns mismatched."
             )
